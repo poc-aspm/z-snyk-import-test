@@ -1,0 +1,9 @@
+{
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "needle": "^3.0.0"
+  }
+}
