@@ -9,6 +9,5 @@
   "main": "index.js",
   "type": "module",
   "dependencies": {
-    "axios": "^0.6.0"
   }
 }
