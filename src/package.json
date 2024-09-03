@@ -1,28 +1,6 @@
 {
   "name": "intl-spa-pci",
   "version": "1.23.0",
-  "private": true,
-  "scripts": {
-    "setup": "bfa-next",
-    "dev": "bfa-next && BUSINESS_ID=ipsymx node server.js",
-    "build": "BUILD_PHASE=true BUSINESS_ID=ipsymx next build && cp emptyresponse.html .next/static/",
-    "start": "cross-env NODE_ENV=production BUSINESS_ID=ipsymx node server.js",
-    "format": "prettier --write .",
-    "typecheck": "tsc --noEmit", 
-    "lint": "eslint . --fix --ext .ts,.tsx",
-    "lint:ci": "eslint . --ext .ts,.tsx",
-    "test": "bfa-next && cross-env NODE_ENV=test jest --watch --passWithNoTests",
-    "test:showlogs": "cross-env NODE_ENV=test jest --silent false --verbose false --passWithNoTests",
-    "test:ci": "cross-env NODE_ENV=test jest --ci --coverage --no-cache --passWithNoTests",
-    "generate-types:local": "NODE_TLS_REJECT_UNAUTHORIZED=0 npm run generate-types",
-    "generate-types": "graphql-codegen && prettier --write ./gql.generated.ts",
-    "sonar": "node sonar-project.js"
-  },
-  "jestSonar": {
-    "reportPath": "coverage",
-    "reportFile": "test-reporter.xml",
-    "indent": 2
-  },
   "dependencies": {
     "@apollo/client": "^3.3.11",
     "@bfa/base-ui": "^9.17.0",
@@ -130,19 +108,5 @@
     "pretty-quick": "^2.0.1",
     "sonarqube-scanner": "^3.3.0",
     "typescript": "^4.8.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsc --noEmit && lint-staged"
-    }
-  },
-  "lint-staged": {
-    "./**/*.{ts,tsx}": [
-      "eslint . --fix --ext .ts,.tsx",
-      "pretty-quick — staged"
-    ]
-  },
-  "engines": {
-    "node": ">=16.0.0 <17.0.0"
   }
 }
