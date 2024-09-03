@@ -1,0 +1,14 @@
+{
+  "name": "dsabot",
+  "version": "1.2.0",
+  "description": "DSAbot app integrate Github and D.Track to orchestrate security vulnerabilities in third-party components.",
+  "private": true,
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.6.0"
+  }
+}
