@@ -22,7 +22,7 @@
     "redux-thunk": "2.2.0",
     "redux-undo": "^0.6.1",
     "moment": "^1.24.0",
-    "node-sass": "3.0.0"
+    "node-sass": "3.0.0" 
   },
   "scripts": {
     "build": "yarn install && apk --no-cache add curl && curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.42.0",
