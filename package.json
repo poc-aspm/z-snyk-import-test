@@ -1,7 +1,0 @@
-{
-  "name": "For the first Security Scan only",
-  "version": "0.0.0",
-  "description": "This file allow us to do the first Snyk Security Scan. After that you'll must remove this file.",
-  "dependencies": {
-  }
-}
