@@ -1,7 +1,28 @@
 {
-  "name": "For the first Security Scan only",
-  "version": "0.0.0",
-  "description": "This file allow us to do the first Snyk Security Scan. After that you'll must remove this file.",
+  "name": "vulnerable-node-app",
+  "version": "1.0.0",
+  "description": "Aplicación Node.js con dependencias vulnerables para pruebas de SAST/SCA",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"No tests specified\""
+  },
+  "author": "Security Lab",
+  "license": "MIT",
   "dependencies": {
+    "express": "4.16.0",
+    "lodash": "4.17.11",
+    "jquery": "3.4.0",
+    "moment": "2.19.3",
+    "handlebars": "4.0.11",
+    "jsonwebtoken": "8.3.0",
+    "axios": "0.18.0",
+    "serialize-javascript": "1.7.0",
+    "marked": "0.3.6",
+    "ws": "5.2.2"
+  },
+  "devDependencies": {
+    "eslint": "4.19.1",
+    "mocha": "5.2.0"
   }
 }
